@@ -7,7 +7,6 @@ def computerchoice():
     arr = ["rock","paper","scissors"]
     computerChoice =random.randint(0,2)
     return arr[computerChoice]
-
 def userVScomputer(player,computer):
     if player == computer:
         print(f"player : {user_input}\ncomputer : {computer}\nTie!")
@@ -22,14 +21,14 @@ def userVScomputer(player,computer):
             print(f"player : {user_input}\ncomputer : {computer}\nYou won!")
         else:
             invalid()
-            print(player)
-            print(computer)
+            # print(player)
+            # print(computer)
 
 def invalid():
     print("You entered wrong word, Enter rock, paper and scissors only!")
 
 def empty():
-    print("You didnt enter anything! Input is empty")
+    print("You didnt enter anything!\nInput is empty")
 if user_input=="":
     empty()
 else:
